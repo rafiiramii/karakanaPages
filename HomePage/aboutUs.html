@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Karakana|About Us</title>
+  </head>
+  <body>
+    <nav class="px-8 pt-4 md:px-12 md:pt-6">
+      <div class="flex justify-between m-0">
+        <div class="flex">
+          <h1 class="font-serif tracking-wide self-center font-bold text-2xl">KARAKANA</h1>
+
+          <!-- NAVIGATION - LARGE SCREENS -->
+          <div class="hidden p-0 m-0 ml-36 md:flex">
+            <ul class="hidden m-0 p-0 text-slate-600 uppercase text-xs md:flex items-center lg:text-sm md:text-xs sm:text-xs">
+              <li class="pr-8"><a href="" class="transition duration-300 focus:outline-none focus:text-sky-600 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">About Us</a></li>
+              <li class="pr-8"><a href="" class="transition duration-300 focus:outline-none focus:text-sky-600 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Services</a></li>
+              <li class=""><a href="" class="transition duration-300 focus:outline-none focus:text-sky-600 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Events</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- MOBILE NAV ICON -->
+        <!-- open mob menus -->
+        <svg class="md:hidden w-7 absolute right-6 fixed" id="bars" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero" /></svg>
+        <!-- close mob menus -->
+        <svg class="hidden w-7 absolute right-6 fixed" id="closeMenus" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" /></svg>
+        <div class="hidden md:flex md">
+          <a class="rounded-full bg-sky-600 text-white text-xs py-2 px-4" href="tel:+255755704447">LET'S TALK NOW</a>
+        </div>
+      </div>
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="hidden flex w-full mx-auto py-8 text-center">
+        <div class="flex flex-col justify-center items-center w-full uppercase">
+          <a href="#" class="block text-slate-600 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-sky-500 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">About Us</a>
+          <a href="#" class="block text-slate-600 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-sky-500 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Services</a>
+          <a href="#" class="block text-slate-600 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-sky-500 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Events</a>
+          <a class="rounded-full bg-sky-600 text-white text-xs py-2 px-4" href="tel:+255755704447">LET'S TALK NOW</a>
+        </div>
+      </div>
+    </nav>
+    <script src="home.js"></script>
+  </body>
+</html>
