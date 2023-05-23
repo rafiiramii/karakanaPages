@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
     <title>Karakana|About Us</title>
   </head>
   <body>
     <nav class="px-8 pt-4 md:px-12 md:pt-6">
       <div class="flex justify-between m-0">
         <div class="flex">
-          <h1 class="font-serif tracking-wide self-center font-bold text-2xl">KARAKANA</h1>
+          <h1 class="font-serif tracking-wide self-center font-bold text-2xl">LOGO</h1>
 
           <!-- NAVIGATION - LARGE SCREENS -->
-          <div class="hidden p-0 m-0 ml-36 md:flex">
-            <ul class="hidden m-0 p-0 text-slate-600 uppercase text-xs md:flex items-center lg:text-sm md:text-xs sm:text-xs">
+          <div class="hidden p-0 m-0 ml-40 md:flex">
+            <ul class="hidden m-0 p-0 text-slate-600 uppercase text-xs md:flex items-center lg:text-xs md:text-xs sm:text-xs">
               <li class="pr-8"><a href="" class="transition duration-300 focus:outline-none focus:text-sky-600 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">About Us</a></li>
               <li class="pr-8"><a href="" class="transition duration-300 focus:outline-none focus:text-sky-600 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Services</a></li>
-              <li class=""><a href="" class="transition duration-300 focus:outline-none focus:text-sky-600 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Events</a></li>
+              <li class=""><a href="" class="transition duration-300 focus:outline-none focus:text-sky-600 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">FORUMS</a></li>
             </ul>
           </div>
         </div>
@@ -30,7 +33,7 @@
         <!-- close mob menus -->
         <svg class="hidden w-7 absolute right-6 fixed" id="closeMenus" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" /></svg>
         <div class="hidden md:flex md">
-          <a class="rounded-full bg-sky-600 text-white text-xs py-2 px-4" href="tel:+255755704447">LET'S TALK NOW</a>
+          <a class="rounded-full bg-sky-600 text-white text-xs py-2 px-4 lg:text-xs" href="tel:+255755704447">LET'S TALK NOW</a>
         </div>
       </div>
       <!-- MOBILE MENU -->
@@ -38,11 +41,33 @@
         <div class="flex flex-col justify-center items-center w-full uppercase">
           <a href="#" class="block text-slate-600 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-sky-500 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">About Us</a>
           <a href="#" class="block text-slate-600 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-sky-500 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Services</a>
-          <a href="#" class="block text-slate-600 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-sky-500 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Events</a>
+          <a href="#" class="block text-slate-600 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-sky-500 focus:underline hover:underline hover:text-sky-600" style="text-underline-offset: 8px">Forums</a>
           <a class="rounded-full bg-sky-600 text-white text-xs py-2 px-4" href="tel:+255755704447">LET'S TALK NOW</a>
         </div>
       </div>
     </nav>
+
+    <!-- First heading -->
+    <div class="bg-gray-650 w-screen content-center pl-72 pt-24">
+      <h1 class="font-serif tracking-wide self-center font-bold text-7xl" id="heading">
+        Made to serve. <br />
+        Together
+      </h1>
+      <p class="text-lg tracking-normal w-9/12 mt-6 leading-loose">Karakana Consulting is a social enterprise made up of serial experts with vast expertise and experience in organization development, sustainability and academia-industry work spaces.</p>
+    </div>
+    <img class="mt-12" id="bannerImage" src="./images/bannerImg.jpg" />
+    <!-- Our team offer -->
+    <div class="flex mt-20 px-12">
+      <h2 class="font-bold text-5xl w-2/5">Our team offers</h2>
+      <p class="text-lg tracking-normal w-3/5  leading-loose  ">-Moderation services through conferences, planning, retreating and workshops.<br/> -Organise top-notch management forums, dialogue or capacity development with various topics. <br/>-Strategy build up, reviews and sustainability.<br/> -Facilitate reskilling programs.</p>
+    </div>
+    <!-- Upcoming events -->
+    <div class="mt-20 px-12">
+    <h3 class="font-normal text-3xl mb-8">Upcoming event</h3>
+    <a class="text-sky-600 mb-8" href="karkana.co.tz/events">Wellness: Reversing effects of stress in workplaces.</a><br/>
+    <a class="text-sky-600" href="karkana.co.tz/events">Fundraising: Investing in innovative ideas and strategies in Faith-Based Organisations,Moderation as a professional option.</a>
+
+   </div>
     <script src="home.js"></script>
   </body>
 </html>
