@@ -24,3 +24,6 @@ p{
   height: 500px; 
   object-fit: cover;
 }
+.pointer{
+  fill:#1E88E5;
+}
