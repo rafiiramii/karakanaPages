@@ -25,6 +25,10 @@ p{
   .bannerImage{
     height: 150px !important; 
   }
+  .pointer{
+    width:20px !important;
+    height:20px !important;
+  }
 }
 /* ipad tablets */
 @media (min-width: 481px) and (max-width: 768px) {
