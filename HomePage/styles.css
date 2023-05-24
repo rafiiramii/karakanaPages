@@ -10,19 +10,46 @@
 
 }
  #heading {
-  font-weight: 700;
-  line-height:5.5rem !important;
-
+  /* font-weight: 700;p */
+  /* line-height:5.5rem !important; */
  }
 
 p{
   color:  rgba(0, 0, 0, 0.5);
 
 }
-#bannerImage{
-  width: 100%;
-  height: 500px; 
-  object-fit: cover;
+
+
+/* mobile device */
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannerImage{
+    height: 150px !important; 
+  }
+}
+/* ipad tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .bannerImage{
+    height: 200px !important; 
+  }
+}
+
+/* small screen, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bannerImage{
+    height: 300px !important; 
+  }
+}
+/* desktops, larg screen */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .bannerImage{
+    height: 400px !important; 
+  }
+}
+/* extra larg screen, tv */
+@media (min-width: 1201px)  {
+  .bannerImage{
+    height: 500px !important; 
+  }
 }
 .pointer{
   fill:#1E88E5;
