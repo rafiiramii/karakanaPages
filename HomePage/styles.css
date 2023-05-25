@@ -35,6 +35,10 @@ p{
   .bannerImage{
     height: 200px !important; 
   }
+  .eventImage{
+    height:400px !important;
+    width:auto;
+  }
 }
 
 /* small screen, laptops */
@@ -42,11 +46,19 @@ p{
   .bannerImage{
     height: 300px !important; 
   }
+  .eventImage{
+    height:200px !important;
+    width:auto;
+  }
 }
 /* desktops, larg screen */
 @media (min-width: 1025px) and (max-width: 1200px) {
   .bannerImage{
     height: 400px !important; 
+  }
+  .eventImage{
+    height:400px !important;
+    width:auto;
   }
 }
 /* extra larg screen, tv */
