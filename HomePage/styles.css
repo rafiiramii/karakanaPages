@@ -33,7 +33,7 @@ p{
 @media (min-width: 481px) and (max-width: 768px) {
   .bannerImage{
     height: 280px !important; 
-    width:auto !important;
+    width:100% !important;
   }
   .eventImage{
     height:auto !important;
