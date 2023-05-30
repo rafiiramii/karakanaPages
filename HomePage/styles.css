@@ -6,11 +6,10 @@
   display: block;
 }
 * {
-  font-family: 'Libre Baskerville', serif;
-   /* border:2px solid red; */
+  font-family: 'Poppins', sans-serif;
    overflow-x:hidden;
 }
-h1,h2,h3,h4,h5 {
+h2,h3,h4,h5 {
   line-height:normal !important;
 }
 h1, h2, h3, h4,p, a{
@@ -19,6 +18,11 @@ h1, h2, h3, h4,p, a{
 p{
   color:  rgba(0, 0, 0, 0.65);
 }
+h1{
+  color:  rgba(0, 0, 0, 0.8);
+}
+
+
 /* mobile device */
 @media (min-width: 320px) and (max-width: 480px) {
   .bannerImage{
@@ -36,7 +40,7 @@ p{
     width:100% !important;
   }
   .eventImage{
-    height:auto !important;
+    height:250px !important;
     width:100% !important;
   }
 }
@@ -48,14 +52,22 @@ p{
   }
  
   .eventImage{
-    height:auto !important;
+    height:200px !important;
     width:100% !important;
+  }
+  .pointer{
+    width:20px !important;
+    height:20px !important;
   }
 }
 /* desktops, larg screen */
 @media (min-width: 1025px) and (max-width: 1200px) {
   .bannerImage{
     height: 400px !important; 
+  }
+  .eventImage{
+    height:240px !important;
+    width:100% !important;
   }
 }
 /* extra larg screen, tv */
@@ -64,10 +76,10 @@ p{
     height: 500px !important; 
   }
   .eventImage{
-    height:auto !important;
+    height:240px !important;
     width:100% !important;
   }
 }
 .pointer{
-  fill:#1E88E5;
+  /* fill:#1E88E5; */
 }
