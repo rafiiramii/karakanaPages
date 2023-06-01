@@ -92,12 +92,12 @@
       <h3 class="font-bold  text-xl md:text-2xl lg:text-3xl xl:text-3xl text-center mb-4">Registration Form </h3>
       <form id="registration-form">
         <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+            <label for="name" class="block text-gray-700 font-semibold mb-2"> Full Name</label>
             <input type="text" id="name" name="name"  placeholder="Your Name..." class="border border-gray-300 rounded px-4 py-2 w-full focus:outline-none focus:border-blue-500" required>
             <div class="text-red-500 text-sm mt-1" id="name-error"></div>
           </div>
         <div class="mb-4">
-          <label for="name" class="block text-gray-700 font-semibold mb-2">Company</label>
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Company Name</label>
           <input type="text" id="company" name="name" placeholder="Your Comapny" class="border border-gray-300 rounded px-4 py-2 w-full focus:outline-none focus:border-blue-500" required>
           <div class="text-red-500 text-sm mt-1" id="company-error"></div>
         </div>
@@ -110,14 +110,33 @@
           <label for="email" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
           <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="border border-gray-300 rounded px-4 py-2 w-full focus:outline-none focus:border-blue-500" required>
       </div>
-        <div>
-            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded focus:outline-none">Send</button>
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-semibold mb-2">Reference Number</label>
+        <input type="text" id="reference" name="name" placeholder="Write reference number" class="border border-gray-300 rounded px-4 py-2 w-full focus:outline-none focus:border-blue-500" required>
+        <div class="text-red-500 text-sm mt-1" id="company-error"></div>
+      </div>
+      <!-- drop down -->
+      <div class="w-full ">
+        <label for="dropdown" class="block text-gray-700 font-semibold mb-2">Select a course</label>
+        <div class="relative">
+          <select id="events" name="dropdown" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <option value="" disabled selected>Select an course</option>
+            <option value="Reducing stress, increasing productivity">Reducing stress, increasing productivity</option>
+            <option value="Fundraising - Future of investment in FBOs and NPOs">Fundraising - Future of investment in FBOs and NPOs</option>
+            <option value="Moderation as a professional option">Moderation as a professional option</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+        <div class="mt-6">
+            <button type="submit" id="submitBtn" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded focus:outline-none">Send</button>
         </div>
     </form>
-
-
-             
-    </div>
+  </div>
     <!-- Footer -->
     <div class="flex flex-col md-flex-col lg:flex-row pt-10 md:pt-10 lg:pt-14 xl:pt-14  px-8 md:px-8 lg:px-4 xl:px-24  pb-10 md:pb-10 lg:pb-14  xl:pb-14 justify-between">
       <div>KARAKANA <br> COUSULTING</div>
@@ -147,6 +166,53 @@
       </div>
     </div>
 
+    <script>
+        const form = document.querySelector('#registration-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const nameInput = document.querySelector('#name').value;
+        const emailInput = document.querySelector('#email').value;
+        const companyInput = document.querySelector('#company').value;
+        const phoneInput = document.querySelector('#phone').value;
+        const courseInput = document.querySelector('#events').value;
+        const referenceNo = document.querySelector('#reference').value;
+        const submitButton =  document.querySelector('#submitBtn')
+        
+
+        function disableButton(event) {
+      // Disable the submit button
+         submitButton.disabled = true;
+       }
+        const data = {
+            name: nameInput,
+            companyName: companyInput,
+            email: emailInput,
+            phoneNumber: phoneInput,
+            course: courseInput,
+            reference: referenceNo
+        };
+
+        const url = "https://eotrx4v1t6.execute-api.eu-north-1.amazonaws.com/default/sendFormToEmail"; // Your AWS Lambda function URL here
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
+
+  
+
+    </script>
   <!-- js for navbar -->
   <script src="home.js"></script>
 
