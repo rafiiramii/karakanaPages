@@ -32,6 +32,11 @@ h1{
     width:20px !important;
     height:20px !important;
   }
+  .eventImage{
+    height:180px !important;
+    width:100% !important;
+    object-fit:cover
+  }
 }
 /* ipad tablets */
 @media (min-width: 481px) and (max-width: 768px) {
