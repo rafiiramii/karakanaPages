@@ -23,6 +23,15 @@ h1{
 }
 
 
+#bgLogo{
+  background-image: url("../images/KARAKANA-bg-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height:900px; */
+  background-color:transparent;
+}
+
 /* mobile device */
 @media (min-width: 320px) and (max-width: 480px) {
   .bannerImage{
@@ -45,7 +54,7 @@ h1{
     width:100% !important;
   }
   .eventImage{
-    height:250px !important;
+    height:180px !important;
     width:100% !important;
   }
 }
@@ -66,7 +75,10 @@ h1{
   }
 }
 /* desktops, larg screen */
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .navMenus{
+    margin-left:6.5rem !important;
+  }
   .bannerImage{
     height: 400px !important; 
   }
@@ -77,6 +89,9 @@ h1{
 }
 /* extra larg screen, tv */
 @media (min-width: 1201px)  {
+  .navMenus{
+    margin-left:6.5rem !important;
+  }
   .bannerImage{
     height: 500px !important; 
   }
